@@ -89,6 +89,16 @@ class Report
     {
         return this.set('viewId', id);
     }
+   
+    /**
+     * set filters expression
+     * @param expression string
+     * @returns {Report}
+     */
+    filtersExpression(expression)
+    {
+        return this.set('filtersExpression', expression);
+    }
 
     /**
      * Set a start and end date range.
