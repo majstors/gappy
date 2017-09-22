@@ -19,7 +19,7 @@ class APIResponse
         this._requests = reports;
 
         this.each((report,request,index) => {
-            debug(`"${request.name}" records`, report.data.rows.length);
+            debug(`"${request.name}" records`, (report.data.rows)?report.data.rows.length:0);
         })
     }
 
